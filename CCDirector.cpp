@@ -37,7 +37,7 @@ THE SOFTWARE.
 #include "CCAccelerometer.h"
 #include "CCEGLView.h"
 #include "cocos2d.h"
-#include "Horde3D.h"
+//#include "Horde3D.h"
 #include <fstream>
 
 
@@ -347,6 +347,7 @@ static void splitPath(const std::string& full, std::string& path, std::string& n
 	nameWithExtension = full;
 } 
 
+#if 0
 void CCDirector::loadResourcesFromDisk( const char *contentDir, const char* platformSubDir )
 {
 	string dir;
@@ -421,7 +422,7 @@ void CCDirector::loadResourcesFromDisk( const char *contentDir, const char* plat
 		res = h3dQueryUnloadedResource( 0 );
 	}
 }
-
+#endif
 
 // display the FPS using a LabelAtlas
 // updates the FPS every frame
